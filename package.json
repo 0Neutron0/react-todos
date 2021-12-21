@@ -2,7 +2,7 @@
   "name": "react-todos",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://0neutron0.github.io/react-todos/",
+  "homepage": "https://0Neutron0.github.io/react-todos/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -D build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
