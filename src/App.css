@@ -1,0 +1,169 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.bg__img{
+  background-image: url(/src/img/bg.jpg);
+}
+
+.bg__img::after{
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-color: #0005;
+}
+
+.todos{
+  position: relative;
+  width: 500px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 3px 3px 7px #333;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #63a91f;
+  border-radius: 10px 10px 0 0;
+}
+
+.headet__icon{
+  height: 32px;
+  width: 32px;
+  background-image: url(/src/img/icon/todo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__title{
+  font-size: 30px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.tasks{
+  padding-bottom: 10px;
+}
+
+.tasks__form{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 10px 16px;
+}
+
+.tasks__input{
+  outline: none;
+  width: 70%;
+  height: 35px;
+  padding: 0 7px;
+  border: 2px solid #ccc;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+  font-size: 14px;
+}
+
+
+.tasks__btn{
+  width: 30%;
+  height: 35px;
+  border: 0;
+  background-color: #63a91f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color .7s;
+}
+
+.tasks__btn:hover{
+  background-color: #86e229;
+}
+
+.tasks__not-task{
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.tasks__item{
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  flex-direction: row;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 1s, transform .5s;
+}
+
+.tasks__item:hover{
+  transform: scale(1.02, 1.02);
+}
+
+.tasks__item-default{
+  background-color: #fff;
+}
+
+.tasks__item-default:hover{
+  background-color: #ccc;
+}
+
+.tasks__item-success{
+  background-color: #baeb8a;
+}
+
+.tasks__item-success:hover{
+  background-color: #96cf5f;
+}
+
+.tasks__item-fail{
+  background-color: #eb8a8a;
+}
+
+.tasks__item-fail:hover{
+  background-color: #cf5f5f;
+}
+
+.tasks__index{
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.tasks__text{
+  width: 80%;
+}
+
+.tasks__icon{
+  width: 10%;
+  background-image: url(/src/img/icon/delete.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
