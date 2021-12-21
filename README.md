@@ -6,4 +6,4 @@ Pet-проект.
 
 Используемые технологии: JavaScript-библиотека React (react-app)
 
-[Демонстрационная страница](https://0neutron0.github.io/react-todos/ "Кликни на меня :)")
+[Демонстрационная страница работы приложения](https://0neutron0.github.io/react-todos/ "Кликни на меня :)")
